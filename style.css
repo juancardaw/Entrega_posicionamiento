@@ -1,0 +1,259 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(250,234,26,1) 50%, rgba(251,251,251,1) 100%);
+}
+
+
+/* Posicionar el Header de manera fija al hacer Scroll y que las imagenes pasen por detras */
+header {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background-color: black;
+    z-index: 10; 
+    color: rgba(250,234,26,1);
+    opacity: 90%;
+}
+
+/* Pegar el Footer al fondo de la APP */
+footer {
+    padding: 35px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    color: rgba(250,234,26,1);
+    opacity: 90%;
+}
+
+
+/* -----------------------------------------Contenido--------------------------------------------------------------------------------------- */
+
+.contenido {
+    height: 900px;
+    max-width: 100%;
+}
+
+
+.contenido img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 100px;
+    object-fit: cover;
+    opacity: 10;
+}
+
+.contenido img:hover {
+    filter: blur(3px);
+}
+
+.contenido #subtitulo {
+    text-align: center;
+    position: relative;
+    top: 430px;
+    font-size: 30px;
+    color:rgba(250,234,26,1);
+    text-shadow: 0 0 0.2em black, 0 0 0.2em black;
+    z-index: 1; 
+}
+
+
+/* ------------------------------------------------------Barra de navegacion-------------------------------------------------------------------- */
+
+aside {
+    position: fixed;
+    width: 10%;
+    top: 103px;
+    left: 90%;
+    z-index: 10;
+    background-color: black;
+    opacity: 90%;
+    
+}
+
+ul {
+    list-style:none;
+}
+
+li {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* ------------------------------------------Features  1----------------------------------------------------------------------------------------- */
+
+.feature1{
+    width: 100%;
+    height: 600px;
+}
+
+.imagenfeature1 {
+   object-fit:cover ;
+   object-position: 0 -180px;
+   width: 50%;
+   height: 100%;
+}
+
+.imagenfeature1:hover {
+    filter: grayscale(80%);
+}
+
+.feature1 p {
+    text-align: center;
+    position: relative;
+    bottom: 70%;
+    left: 55%;
+    font-size: 30px;  
+    width: 20%;
+}
+
+.botonfeature1 {
+    position: relative;
+    bottom: 90%;
+    left: 80%;
+    width: 230px;
+    height: 70px;
+    background-color: black;
+    color: yellow;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.botonfeature1:hover {
+    background-color: white;
+    color:black
+}
+
+/* -----------------------------------------------------Features 2------------------------------------------------------------------------ */
+
+
+.feature2 {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.imagenfeature2 {
+    position: relative;
+    left: 50%;
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
+    filter:blur(1px);
+}
+
+.imagenfeature2:hover {
+    filter: grayscale(80%);
+}
+
+.feature2 p {
+    text-align: center;
+    position: relative;
+    bottom: 70%;
+    left: 5%;
+    width: 20%;
+    font-size: 30px;
+}
+
+
+.botonfeature2 {
+    position: relative;
+    bottom: 85%;
+    left: 35%;
+    width: 230px;
+    height: 70px;
+    background-color: black;
+    color: yellow;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.botonfeature2:hover {
+    background-color: white;
+    color: black;
+}
+/* ---------------------------------------------------------------Features 3---------------------------------------------------------------- */
+
+
+.feature3 {
+    width: 100%;
+    height: 600px;
+}
+
+.imagenfeature3 {
+    object-fit: cover;
+    object-position: 0 -10px;
+    width: 50%;
+    height: 100%;
+}
+
+.imagenfeature3:hover {
+    filter:blur(1px);
+}
+
+.feature3 p {
+    position: relative;
+    text-align: center;
+    bottom: 65%;
+    left: 55%;
+    width: 20%;
+    font-size: 30px;
+}
+
+.botonfeature3 {
+    position: relative;
+    bottom: 80%;
+    left: 80%;
+    width: 230px;
+    height: 70px;
+    background-color: black;
+    color: yellow;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.botonfeature3:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* --------------------------------------------------------------footer------------------------------------------------------------------------ */
+
+footer ul {
+    list-style: none;
+    position: relative;
+    bottom: 40px;
+    left: 60%;
+}
+
+footer li {
+    float: left;
+}
