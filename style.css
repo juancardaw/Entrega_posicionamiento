@@ -84,6 +84,7 @@ aside {
     z-index: 10;
     background-color: black;
     opacity: 90%;
+    min-width: 5%;
     
 }
 
@@ -252,6 +253,7 @@ footer ul {
     position: relative;
     bottom: 40px;
     left: 60%;
+    min-width: 100%;
 }
 
 footer li {
